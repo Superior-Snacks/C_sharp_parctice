@@ -1,0 +1,12 @@
+hvað er .net? það er framework,
+CLR (common language runtime)
+Class library
+
+þegar c# er compilað þá er það interperatað í IL Code sem er svo þýtt í machine code með CLR
+
+hvað er class, container með data og meathod basicly functions
+
+namespaces, hópur af classes til að einfalda hönnun, data namespace, img, security
+
+assembly er container fyrir namespaces, high lvl yfir namespaces application er safn af assembly containers
+
