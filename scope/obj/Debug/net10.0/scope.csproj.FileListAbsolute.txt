@@ -1,0 +1,15 @@
+C:\Users\jonin\OneDrive\Documents\C_sharp\scope\obj\Debug\net10.0\scope.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jonin\OneDrive\Documents\C_sharp\scope\obj\Debug\net10.0\scope.AssemblyInfoInputs.cache
+C:\Users\jonin\OneDrive\Documents\C_sharp\scope\obj\Debug\net10.0\scope.AssemblyInfo.cs
+C:\Users\jonin\OneDrive\Documents\C_sharp\scope\obj\Debug\net10.0\scope.csproj.CoreCompileInputs.cache
+C:\Users\jonin\OneDrive\Documents\C_sharp\scope\obj\Debug\net10.0\scope.sourcelink.json
+C:\Users\jonin\OneDrive\Documents\C_sharp\scope\bin\Debug\net10.0\scope.exe
+C:\Users\jonin\OneDrive\Documents\C_sharp\scope\bin\Debug\net10.0\scope.deps.json
+C:\Users\jonin\OneDrive\Documents\C_sharp\scope\bin\Debug\net10.0\scope.runtimeconfig.json
+C:\Users\jonin\OneDrive\Documents\C_sharp\scope\bin\Debug\net10.0\scope.dll
+C:\Users\jonin\OneDrive\Documents\C_sharp\scope\bin\Debug\net10.0\scope.pdb
+C:\Users\jonin\OneDrive\Documents\C_sharp\scope\obj\Debug\net10.0\scope.dll
+C:\Users\jonin\OneDrive\Documents\C_sharp\scope\obj\Debug\net10.0\refint\scope.dll
+C:\Users\jonin\OneDrive\Documents\C_sharp\scope\obj\Debug\net10.0\scope.pdb
+C:\Users\jonin\OneDrive\Documents\C_sharp\scope\obj\Debug\net10.0\scope.genruntimeconfig.cache
+C:\Users\jonin\OneDrive\Documents\C_sharp\scope\obj\Debug\net10.0\ref\scope.dll

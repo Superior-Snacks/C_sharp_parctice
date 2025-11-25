@@ -5,8 +5,8 @@ const int NumberBig = 10; // pascal case convention
 const float Pi = 3.14;
 
 //MIKILVÆGT FYRIR REAL numberSmall
-float aNumber = 1.4f; // þarf að bæta f fyrir aftan því c# compiler telur öll real num sem double
-decimal aBigNumber = 10.9m; // sama hér m fyrir aftan til að passa að talan er decimal
+float aNumber = 1.4F; // þarf að bæta f fyrir aftan því c# compiler telur öll real num sem double
+decimal aBigNumber = 10.9M; // sama hér m fyrir aftan til að passa að talan er decimal
 double normalNumber = 6; // þarf ekkert auka double er default
 
 byte num = 255; // max num

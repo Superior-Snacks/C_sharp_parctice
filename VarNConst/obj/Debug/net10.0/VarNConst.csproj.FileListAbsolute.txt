@@ -1,0 +1,5 @@
+C:\Users\jonin\OneDrive\Documents\C_sharp\VarNConst\obj\Debug\net10.0\VarNConst.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jonin\OneDrive\Documents\C_sharp\VarNConst\obj\Debug\net10.0\VarNConst.AssemblyInfoInputs.cache
+C:\Users\jonin\OneDrive\Documents\C_sharp\VarNConst\obj\Debug\net10.0\VarNConst.AssemblyInfo.cs
+C:\Users\jonin\OneDrive\Documents\C_sharp\VarNConst\obj\Debug\net10.0\VarNConst.csproj.CoreCompileInputs.cache
+C:\Users\jonin\OneDrive\Documents\C_sharp\VarNConst\obj\Debug\net10.0\VarNConst.sourcelink.json
