@@ -1,11 +1,20 @@
-﻿namespace TypeConvertions{
+﻿using System;
+
+namespace TypeConvertions{
     class Program
     {
         static void Main(string[] args)
         {
-            int i = 2555;
-            byte b = (byte)i; //cast to froce convertion
-            System.Console.WriteLine(b);
+            try
+            {
+            string number ="1230";
+            int i = Convert.ToByte(number);
+            System.Console.WriteLine(i);   
+            }
+            catch (Exception)
+            {
+                System.Console.WriteLine("error");
+            }
         }
     }
 }
