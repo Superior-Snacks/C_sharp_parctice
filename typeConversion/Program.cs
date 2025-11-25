@@ -3,9 +3,9 @@
     {
         static void Main(string[] args)
         {
-            byte b = 1;
-            int i = b;
-            System.Console.WriteLine(i);
+            int i = 2555;
+            byte b = (byte)i; //cast to froce convertion
+            System.Console.WriteLine(b);
         }
     }
 }
