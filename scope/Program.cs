@@ -12,7 +12,12 @@ namespace Variables
             char character = 'A';
             string sentance = "put the money in the bag";
             bool sucsess = true;
-            Console.WriteLine(number, bag, cashier);
+            Console.WriteLine(number);
+            Console.WriteLine(bag);
+            System.Console.WriteLine(cashier);
+            System.Console.WriteLine(character);
+            System.Console.WriteLine(sentance);
+            System.Console.WriteLine(sucsess);
         }
     }
 }
