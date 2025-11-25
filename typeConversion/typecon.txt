@@ -1,0 +1,12 @@
+expicit, implicid, no compatable
+
+implicid 
+byte = 1; 00000001
+int = b; 00000000 00000000 00000000 00000001
+ no data loss
+
+int i = 1;
+float f = i;
+
+int i = 300;
+byte b = i; won't compile byte min 0 max 255
