@@ -10,3 +10,15 @@ float f = i;
 
 int i = 300;
 byte b = i; won't compile byte min 0 max 255
+byte b = byte(i); casting allow data loss
+
+explicit 
+float f = 1.0f;
+int i = (int)f; mun missa data (kommuna) en nýtsamlet samt sem áður (casting)
+
+non-compatable
+string s = "1";
+int i int(s); won't work
+
+int i = convert.toint32(2); int32 .net == int c# .toByte, .toint16
+int j int.parse(s); sama
