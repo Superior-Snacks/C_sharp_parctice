@@ -34,3 +34,24 @@ bitwise:
 and &, a& b
 or |, a | b
 */
+namespace Operators
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var a = 12;
+            var b = 5;
+            System.Console.WriteLine(a + b * a);
+            System.Console.WriteLine(a < b);
+            if(a == b)
+            {
+                System.Console.WriteLine("piss");
+            }
+            else
+            {
+                System.Console.WriteLine("poos");
+            }
+        }
+    }
+}
