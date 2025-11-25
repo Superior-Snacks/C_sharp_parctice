@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿namespace TypeConvertions{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            byte b = 1;
+            int i = b;
+            System.Console.WriteLine(i);
+        }
+    }
+}

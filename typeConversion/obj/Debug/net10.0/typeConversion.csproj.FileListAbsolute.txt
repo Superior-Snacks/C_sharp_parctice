@@ -1,0 +1,15 @@
+C:\Users\jonin\OneDrive\Documents\C_sharp\typeConversion\bin\Debug\net10.0\typeConversion.exe
+C:\Users\jonin\OneDrive\Documents\C_sharp\typeConversion\bin\Debug\net10.0\typeConversion.deps.json
+C:\Users\jonin\OneDrive\Documents\C_sharp\typeConversion\bin\Debug\net10.0\typeConversion.runtimeconfig.json
+C:\Users\jonin\OneDrive\Documents\C_sharp\typeConversion\bin\Debug\net10.0\typeConversion.dll
+C:\Users\jonin\OneDrive\Documents\C_sharp\typeConversion\bin\Debug\net10.0\typeConversion.pdb
+C:\Users\jonin\OneDrive\Documents\C_sharp\typeConversion\obj\Debug\net10.0\typeConversion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jonin\OneDrive\Documents\C_sharp\typeConversion\obj\Debug\net10.0\typeConversion.AssemblyInfoInputs.cache
+C:\Users\jonin\OneDrive\Documents\C_sharp\typeConversion\obj\Debug\net10.0\typeConversion.AssemblyInfo.cs
+C:\Users\jonin\OneDrive\Documents\C_sharp\typeConversion\obj\Debug\net10.0\typeConversion.csproj.CoreCompileInputs.cache
+C:\Users\jonin\OneDrive\Documents\C_sharp\typeConversion\obj\Debug\net10.0\typeConversion.sourcelink.json
+C:\Users\jonin\OneDrive\Documents\C_sharp\typeConversion\obj\Debug\net10.0\typeConversion.dll
+C:\Users\jonin\OneDrive\Documents\C_sharp\typeConversion\obj\Debug\net10.0\refint\typeConversion.dll
+C:\Users\jonin\OneDrive\Documents\C_sharp\typeConversion\obj\Debug\net10.0\typeConversion.pdb
+C:\Users\jonin\OneDrive\Documents\C_sharp\typeConversion\obj\Debug\net10.0\typeConversion.genruntimeconfig.cache
+C:\Users\jonin\OneDrive\Documents\C_sharp\typeConversion\obj\Debug\net10.0\ref\typeConversion.dll
