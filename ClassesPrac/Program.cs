@@ -41,12 +41,12 @@ namespace classesPractice
 {
     public class Person
 {
-    public string Name; //field eð data
+        public string Name; //field eð data
 
-    public void Introduce(string receever) //function í class declare return efst þessi returnar ekkert ss void
-    {
-        System.Console.WriteLine("good evening {0}, I am {1}", receever, Name);
-    }
+        public void Introduce(string receever) //function í class declare return efst þessi returnar ekkert ss void
+        {
+            System.Console.WriteLine("good evening {0}, I am {1}", receever, Name);
+        }
 }
     class Program
     {
@@ -60,10 +60,6 @@ namespace classesPractice
         var jón2 = new Person();
         jón2.Name = "jón2";
         jón2.Introduce("mark");
-
-        Person.Person.jón3();
-        jón3.Name = "Jón3";
-        jón3.Introduce("kelly");   
         }
     }
 }
