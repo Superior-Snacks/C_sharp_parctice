@@ -1,4 +1,4 @@
-namespace MyApp
+namespace Myapp
 {
     public class Order
     {
