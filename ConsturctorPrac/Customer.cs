@@ -22,8 +22,4 @@ namespace Myapp
             this.Name = name;
         }
     }
-    public class Order
-    {
-        
-    }
 }

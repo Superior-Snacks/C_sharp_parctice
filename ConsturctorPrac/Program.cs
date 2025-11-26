@@ -12,8 +12,8 @@ namespace ConstructiorPractice
         {
             var customer = new Customer(1, "thomas");
 
-            var Order = new Order();
-            customer.Orders.Add("order");
+            var order = new Order();
+            customer.Orders.Add(order);
             System.Console.WriteLine(customer.Name);
             System.Console.WriteLine(customer.Id);
         }
