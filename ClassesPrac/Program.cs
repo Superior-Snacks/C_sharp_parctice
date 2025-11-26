@@ -52,10 +52,16 @@ public class Person
     {
         System.Console.WriteLine("yo my name is "+ name);
     }
-
-    Person jón = new Person();
-    var jón = new Person();
-
-    Person person.jón();
 }
-// búa til object 
+//Búa til objects í classið
+Person jón1 = new Person();
+jón1.name = "Jón1";
+jón1.Introduce();
+
+var jón2 = new Person();
+jón2.name = "jón2";
+jón2.Introduce();
+
+Person person.jón3();
+jón3.name = "Jón3";
+jón3.Introduce();
