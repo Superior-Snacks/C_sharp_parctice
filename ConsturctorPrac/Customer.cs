@@ -1,4 +1,4 @@
-using Systems.Collections.Generic;
+using System.Collections.Generic;
 
 namespace Myapp
 {
@@ -9,14 +9,16 @@ namespace Myapp
         public List<Order> Orders;
         public Customer()
         {
+            Orders = new List<Order>();
         }
         public Customer(int id) //constructorinn hefur nákvæmlega sama nafn of classinn einginn return type
+            : this()
         {                   // staður til að init defaoult stillir allt í 0, False, None
             this.Id = id;
         }
         public Customer(int id, string name)
+            : this(id)
         {
-            this.Id = id;
             this.Name = name;
         }
     }

@@ -11,6 +11,9 @@ namespace ConstructiorPractice
         static void Main(string[] args)
         {
             var customer = new Customer(1, "thomas");
+
+            var Order = new Order();
+            customer.Orders.Add("order");
             System.Console.WriteLine(customer.Name);
             System.Console.WriteLine(customer.Id);
         }
