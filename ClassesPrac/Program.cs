@@ -47,15 +47,22 @@ namespace classesPractice
         {
             System.Console.WriteLine("good evening {0}, I am {1}", receever, Name);
         }
+
+        public static Person Parce(string str)
+        {
+            var person = new Person();
+            person.Name = str;
+
+            return person;
+        }
 }
     class Program
     {
         static void Main(string[] args)
         {
         //Búa til objects í classið
-        Person jón1 = new Person();
-        jón1.Name = "Jón1";
-        jón1.Introduce("tom");
+        var person = Person.Parce("Jón en betri");
+        person.Introduce("tom");
 
         var jón2 = new Person();
         jón2.Name = "jón2";
