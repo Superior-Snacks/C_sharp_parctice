@@ -5,6 +5,35 @@
 //data represented by fields?
 // behaviour sem er functionar sem ég minntist á áður
 
+//dæmi: 1
+/* 
+    PERSON          nafnið á classinum
+--------------
+name: string
+age: byte           datatypes í classinum
+height: float       (fields)
+weight: int
+--------------
+    walk()          behaviour
+    talk()          functionar í classingum
+    eat()           (methods)
+    sleep()
+--------------
+*/
+//dæmi: 2
+/*
+    Post
+--------------------
+Title: string
+Description: string
+DateTime: DateTime
+--------------------
+  Publish()
+  Like()
+  Comment(mesage)
+--------------------
+*/
+
 namespace classesPractice
 {
     class Program
