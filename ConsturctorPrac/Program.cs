@@ -10,7 +10,9 @@ namespace ConstructiorPractice
     {
         static void Main(string[] args)
         {
-            var customer = new Customer("thomas");
+            var customer = new Customer();
+            System.Console.WriteLine(customer.Name);
+            System.Console.WriteLine(customer.Id);
         }
     }
 }
