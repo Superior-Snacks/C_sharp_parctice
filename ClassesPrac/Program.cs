@@ -33,6 +33,9 @@ DateTime: DateTime
   Comment(mesage)
 --------------------
 */
+//object oft talað um eins og classes:
+//object er instance (notkun) af class í mynni tölvunar:
+//þannig ekki Person classinn sjálfur heldur Jón objectið sem er person class
 
 namespace classesPractice
 {
