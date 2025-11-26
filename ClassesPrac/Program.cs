@@ -44,3 +44,18 @@ namespace classesPractice
         
     }
 }
+public class Person
+{
+    public string name; //field eð data
+
+    public void Introduce() //function í class declare return efst þessi returnar ekkert ss void
+    {
+        System.Console.WriteLine("yo my name is "+ name);
+    }
+
+    Person jón = new Person();
+    var jón = new Person();
+
+    Person person.jón();
+}
+// búa til object 
