@@ -1,9 +1,12 @@
+using Systems.Collections.Generic;
+
 namespace Myapp
 {
     public class Customer
     {
         public int Id;
         public string Name;
+        public List<Order> Orders;
         public Customer()
         {
         }
@@ -16,5 +19,9 @@ namespace Myapp
             this.Id = id;
             this.Name = name;
         }
+    }
+    public class Order
+    {
+        
     }
 }
