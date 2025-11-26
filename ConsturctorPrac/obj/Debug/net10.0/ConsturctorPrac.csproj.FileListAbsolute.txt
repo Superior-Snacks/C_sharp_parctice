@@ -1,0 +1,15 @@
+C:\Users\jonin\OneDrive\Documents\C_sharp\ConsturctorPrac\bin\Debug\net10.0\ConsturctorPrac.exe
+C:\Users\jonin\OneDrive\Documents\C_sharp\ConsturctorPrac\bin\Debug\net10.0\ConsturctorPrac.deps.json
+C:\Users\jonin\OneDrive\Documents\C_sharp\ConsturctorPrac\bin\Debug\net10.0\ConsturctorPrac.runtimeconfig.json
+C:\Users\jonin\OneDrive\Documents\C_sharp\ConsturctorPrac\bin\Debug\net10.0\ConsturctorPrac.dll
+C:\Users\jonin\OneDrive\Documents\C_sharp\ConsturctorPrac\bin\Debug\net10.0\ConsturctorPrac.pdb
+C:\Users\jonin\OneDrive\Documents\C_sharp\ConsturctorPrac\obj\Debug\net10.0\ConsturctorPrac.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jonin\OneDrive\Documents\C_sharp\ConsturctorPrac\obj\Debug\net10.0\ConsturctorPrac.AssemblyInfoInputs.cache
+C:\Users\jonin\OneDrive\Documents\C_sharp\ConsturctorPrac\obj\Debug\net10.0\ConsturctorPrac.AssemblyInfo.cs
+C:\Users\jonin\OneDrive\Documents\C_sharp\ConsturctorPrac\obj\Debug\net10.0\ConsturctorPrac.csproj.CoreCompileInputs.cache
+C:\Users\jonin\OneDrive\Documents\C_sharp\ConsturctorPrac\obj\Debug\net10.0\ConsturctorPrac.sourcelink.json
+C:\Users\jonin\OneDrive\Documents\C_sharp\ConsturctorPrac\obj\Debug\net10.0\ConsturctorPrac.dll
+C:\Users\jonin\OneDrive\Documents\C_sharp\ConsturctorPrac\obj\Debug\net10.0\refint\ConsturctorPrac.dll
+C:\Users\jonin\OneDrive\Documents\C_sharp\ConsturctorPrac\obj\Debug\net10.0\ConsturctorPrac.pdb
+C:\Users\jonin\OneDrive\Documents\C_sharp\ConsturctorPrac\obj\Debug\net10.0\ConsturctorPrac.genruntimeconfig.cache
+C:\Users\jonin\OneDrive\Documents\C_sharp\ConsturctorPrac\obj\Debug\net10.0\ref\ConsturctorPrac.dll
