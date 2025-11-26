@@ -4,9 +4,12 @@ namespace Myapp
     {
         public int Id;
         public string Name;
+        public Customer()
+        {
+        }
         public Customer(int id) //constructorinn hefur nákvæmlega sama nafn of classinn einginn return type
         {                   // staður til að init defaoult stillir allt í 0, False, None
-            this.ID = id;
+            this.Id = id;
         }
         public Customer(int id, string name)
         {
