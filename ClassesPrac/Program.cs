@@ -39,29 +39,31 @@ DateTime: DateTime
 
 namespace classesPractice
 {
+    public class Person
+{
+    public string Name; //field eð data
+
+    public void Introduce(string receever) //function í class declare return efst þessi returnar ekkert ss void
+    {
+        System.Console.WriteLine("good evening {0}, I am {1}", receever, Name);
+    }
+}
     class Program
     {
-        
+        static void Main(string[] args)
+        {
+        //Búa til objects í classið
+        Person jón1 = new Person();
+        jón1.Name = "Jón1";
+        jón1.Introduce("tom");
+
+        var jón2 = new Person();
+        jón2.Name = "jón2";
+        jón2.Introduce("mark");
+
+        Person.Person.jón3();
+        jón3.Name = "Jón3";
+        jón3.Introduce("kelly");   
+        }
     }
 }
-public class Person
-{
-    public string name; //field eð data
-
-    public void Introduce() //function í class declare return efst þessi returnar ekkert ss void
-    {
-        System.Console.WriteLine("yo my name is "+ name);
-    }
-}
-//Búa til objects í classið
-Person jón1 = new Person();
-jón1.name = "Jón1";
-jón1.Introduce();
-
-var jón2 = new Person();
-jón2.name = "jón2";
-jón2.Introduce();
-
-Person person.jón3();
-jón3.name = "Jón3";
-jón3.Introduce();
