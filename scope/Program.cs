@@ -10,6 +10,7 @@ namespace Variables
             const float e = 2.71f;
             System.Console.WriteLine(pi);
             Console.WriteLine(e);
+            System.Console.WriteLine(pi);
         }
     }
 }
