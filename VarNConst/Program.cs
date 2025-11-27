@@ -13,6 +13,8 @@ byte num = 255; // max num
 
 num = num + 1; // 0 over flowr
 
+byte anotherNum = 100;
+
 checked
 {
     byte safeByte = 255;
