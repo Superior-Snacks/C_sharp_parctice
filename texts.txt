@@ -10,4 +10,4 @@ namespaces, hópur af classes til að einfalda hönnun, data namespace, img, sec
 
 assembly er container fyrir namespaces, high lvl yfir namespaces application er safn af assembly containers
 
-hvað er í gangi?
+hvað er í gangi? wooohooo þetta virkar
