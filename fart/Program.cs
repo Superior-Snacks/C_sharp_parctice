@@ -5,6 +5,16 @@ namespace WorldHi
     {
         static void Main(string[] args)
         {
+            int x;
+            int y; //boring
+            int z;
+
+            int x, y, z // chad
+
+            int x= 10, y=20, z=30 //giga chad
+
+
+
             int age;
             age = 23;
             int betterage = 23;
