@@ -15,3 +15,5 @@ hvað er í gangi? wooohooo þetta virkar
 hvernig hef ég autocomplete en ekki ai ? ég vil bara venjulegt autocomplete
 
 ok what now?
+
+next boolean data types
