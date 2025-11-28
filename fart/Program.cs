@@ -22,7 +22,7 @@ namespace WorldHi
             Console.WriteLine(bigNum);
             Console.WriteLine(int.MaxValue);
             Console.WriteLine(long.MaxValue);
-            Console.WriteLine("{1}, {2}, {3}", x, y, z);
+            Console.WriteLine("{0}, {1}, {2}", x, y, z);
 
 
             double neg = 55.23;
@@ -37,8 +37,6 @@ namespace WorldHi
             decimal curr = 14.99M;
             Console.WriteLine(curr);
             Console.WriteLine(decimal.MaxValue);
-
-            cw
 
             Console.ReadLine();
         }
