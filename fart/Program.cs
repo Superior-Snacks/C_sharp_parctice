@@ -10,7 +10,7 @@ namespace WorldHi
             Console.WriteLine("pissoff");
             Console.WriteLine(34);
             Console.WriteLine("fartboy");
-            Console.WriteLine("aah yes it is the {0} {1}", number, name);
+            Console.WriteLine("aah yes it is the {0} {1} you are legendary", number, name);
         }
     }
 }
