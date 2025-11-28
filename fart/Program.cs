@@ -5,25 +5,25 @@ namespace WorldHi
     {
         static void Main(string[] args)
         {
-            int x;
-            int y; //boring
-            int z;
+            //int x;
+            //int y; //boring
+            //int z;
 
-            int x, y, z // chad
+            //int x, y, z // chad
 
-            int x= 10, y=20, z=30 //giga chad
-
+            int x = 10, y = 20, z = 30; //giga chad
 
 
             int age;
             age = 23;
             int betterage = 23;
-
             long bigNum = -90000000000L;
             Console.WriteLine("{0}, {1}", age, betterage);
             Console.WriteLine(bigNum);
             Console.WriteLine(int.MaxValue);
             Console.WriteLine(long.MaxValue);
+            Console.WriteLine("{1}, {2}, {3}", x, y, z);
+
 
             double neg = 55.23;
             Console.WriteLine(neg);
@@ -38,7 +38,7 @@ namespace WorldHi
             Console.WriteLine(curr);
             Console.WriteLine(decimal.MaxValue);
 
-
+            cw
 
             Console.ReadLine();
         }
