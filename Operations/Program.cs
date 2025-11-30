@@ -32,6 +32,25 @@
 
             Console.WriteLine(i++); //returnar i svo ++ þannig enging breyting sést
             Console.WriteLine(++i); // fix?
+
+            Console.WriteLine("--------------------------------------------");
+
+            //remainder 
+            int first = 10;
+            int second = 3;
+
+            // 10 / 3 = 3 r 1
+            // 3 x 3 = 9 r 1
+            Console.WriteLine(first % second); // 1
+
+            // 10 % 2 = 0
+            // 11 % 2 = 1
+            // 12 % 2 = 0
+            Console.WriteLine(first % 2); // 0
+            Console.WriteLine(second % 2); // 1
+
+            Console.WriteLine(1000 % 90); // 10
+            Console.WriteLine(71 % 10); // 1
             Console.ReadLine();
         } 
     }
