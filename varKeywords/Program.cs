@@ -1,7 +1,10 @@
-﻿namespace varKeywords
+﻿using System;
+
+namespace varKeywords
 {
     class Program
     {
+        //þett er fínt fyrir augljosa hluti en bara betra að nota nákvæmari leiðina til að byrja með tbh
         static void Main(string[] args)
         {
             //int age = 24;
@@ -27,6 +30,7 @@
 
             var letter = 'c';
             Console.WriteLine(letter);
+
             Console.ReadLine();
         }
     }
