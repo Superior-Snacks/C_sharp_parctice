@@ -15,6 +15,14 @@
                 Console.WriteLine(i);
             }
 
+            Console.Write("YOU DECIDE: ");
+            int decision = Convert.ToInt32(Console.ReadLine());
+
+            for ( int i = 0; i < decision; i++)
+            {
+                Console.WriteLine("lets go " + i);
+            }
+
             Console.ReadLine();
         }
     }
