@@ -27,13 +27,21 @@
             }
             else
             {
-                if (age > 21)
+                if (age > 21 && age <25)
                 {
                     Console.WriteLine("welcome " + name + " you are over the legal limmit and are " + age);
                 }
                 else if (age == 21)
                 {
                     Console.WriteLine("aaah just made it fam!!");
+                }
+                else if (age >= 25 && age <= 150)
+                {
+                    Console.WriteLine("YOOO A OLDIE IN THE BUILDING");
+                }
+                else if (age < 0 || age >= 150)
+                {
+                    Console.WriteLine("NAAH bruh done faked his age");
                 }
                 else
                 {
