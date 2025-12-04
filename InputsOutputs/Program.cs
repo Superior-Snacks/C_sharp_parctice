@@ -11,18 +11,37 @@
             //Console.WriteLine("good evening " + name);
 
             Console.Write("and what is your age: ");
-            string age = Console.ReadLine();
+            int age = Convert.ToInt32(Console.ReadLine());
             //Console.WriteLine("an outrageous age of " + age);
 
             //sleppa line svo allt endar á sömu línu
-            Console.Write("your name is ");
-            Console.Write(name);
-            Console.Write(" and your age is "); 
-            Console.WriteLine(age);
+            //Console.Write("your name is ");
+            //Console.Write(name);
+            //Console.Write(" and your age is "); 
+            //Console.WriteLine(age);
 
             Console.WriteLine("your name is " + name + " and your age is " + age);
+            if (name == "Frank")
+            {
+                Console.WriteLine("FRANK YOU FUCK YOU KNOW YOU ARE BANNED!!!!");
+            }
+            else
+            {
+                if (age > 21)
+                {
+                    Console.WriteLine("welcome " + name + " you are over the legal limmit and are " + age);
+                }
+                else if (age == 21)
+                {
+                    Console.WriteLine("aaah just made it fam!!");
+                }
+                else
+                {
+                    Console.WriteLine("bro wtf you are way too young " + age + " is not permitted");
+                }
+            }
 
-            Console.ReadLine();
+                Console.ReadLine();
         }
     }
 }
