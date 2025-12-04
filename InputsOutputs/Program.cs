@@ -18,7 +18,9 @@
             Console.Write("your name is ");
             Console.Write(name);
             Console.Write(" and your age is "); 
-            Console.Write(age);
+            Console.WriteLine(age);
+
+            Console.WriteLine("your name is " + name + " and your age is " + age);
 
             Console.ReadLine();
         }
