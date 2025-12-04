@@ -15,7 +15,7 @@
 
             Console.WriteLine("");
             Console.Write("ok now calculate " + number1 + " + " + number2 + " = ");
-            int answer = 0;
+            int answer;
             Console.WriteLine("");
             do
             {
