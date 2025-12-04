@@ -58,8 +58,8 @@
 
             int correct = number1 + number2;
 
-            Console.WriteLine();
-            Console.Write("ok now calculate " + number1 + " + " + number2 " = ");
+            Console.WriteLine("");
+            Console.Write("ok now calculate " + number1 + " + " + number2 + " = ");
             int anwser = Convert.ToInt32(Console.ReadLine());
 
             if (anwser == correct)
