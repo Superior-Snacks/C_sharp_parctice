@@ -13,7 +13,7 @@
             Console.WriteLine(output);
 
             //ennþá betri leið
-            Console.WriteLine(age > 0 && age < 150 ? "Valid Age!" : "Suspect age?");
+            Console.WriteLine(age >= 0 && age <= 150 ? "Valid Age!" : "Suspect age?");
             Console.ReadLine();
         }
     }
