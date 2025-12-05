@@ -11,6 +11,9 @@
             //aðalega til að einfalda if then statements mikilvægt fyrir lesanlegan kóða
             string output = age > 0 && age < 150 ? "Valid Age!" : "Suspect age?";
             Console.WriteLine(output);
+
+            //ennþá betri leið
+            Console.WriteLine(age > 0 && age < 150 ? "Valid Age!" : "Suspect age?");
             Console.ReadLine();
         }
     }
