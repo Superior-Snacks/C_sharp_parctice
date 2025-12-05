@@ -11,6 +11,8 @@
             Console.WriteLine(string.Format("{0:0.00}", number));
             Console.WriteLine(string.Format("{0:0.000} {1:0.00000}", number, number));
 
+            Console.WriteLine(number.ToString("C"));
+
             Console.ReadLine();
         }
     }
