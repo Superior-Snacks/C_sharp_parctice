@@ -40,6 +40,7 @@ namespace stringFormatting
 
             string floop = "this is a longer string";
             Console.WriteLine(floop);
+            Console.WriteLine(floop.Contains("r"));
             Console.WriteLine("");
             
             for (int i = 0; i < floop.Length; i++)
