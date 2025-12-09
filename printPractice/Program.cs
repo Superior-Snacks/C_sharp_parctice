@@ -9,6 +9,13 @@
             string sentance = Console.ReadLine();
             Console.WriteLine(sentance.Length);
 
+            for (int i = 0; i < sentance.Length; i++)
+            {
+                Thread.Sleep(300);
+                Console.Write(sentance[i]);
+            }
+            Console.WriteLine("");
+
             for (int i = sentance.Length - 1; i >= 0; i--)
             {
                 Thread.Sleep(500);
