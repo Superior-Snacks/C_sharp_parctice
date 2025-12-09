@@ -1,2 +1,20 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿namespace printPractice
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //print input in reverse
+            Console.Write("enter string: ");
+            string sentance = Console.ReadLine();
+            Console.WriteLine(sentance.Length);
+
+            for (int i = sentance.Length - 1; i >= 0; i--)
+            {
+                Thread.Sleep(500);
+                Console.Write(sentance[i]);
+            }
+            Console.ReadLine();
+        }
+    }
+}
