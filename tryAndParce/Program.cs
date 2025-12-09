@@ -11,7 +11,19 @@ namespace tryAndParce
             int number = 0;
 
             bool sucsess = int.TryParse(getNumber, out number);
-            Console.WriteLine("");
+
+            if (sucsess)
+            {
+                Console.WriteLine(sucsess);
+                Console.WriteLine("sucessful input!!!");
+                Console.WriteLine(number);
+            }
+            else
+            {
+                Console.WriteLine(sucsess);
+                Console.WriteLine("YOU FAIL TO LIVE!!!!1");
+            }
+                Console.WriteLine("");
 
             Console.WriteLine(sucsess);
             Console.WriteLine(number);
