@@ -28,7 +28,7 @@ namespace stringFormatting
             //{
             //    Console.WriteLine("you do not have a name?");
             //}
-            if (string.IsNullOrEmpty(name1))
+            if (string.IsNullOrEmpty(name1)) // besta leiðin til að checka ef eitthvað er þar
             {
                 Console.WriteLine("HUGE ERROR SOMEWHERE");
             }
