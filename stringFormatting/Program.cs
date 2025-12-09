@@ -18,17 +18,25 @@ namespace stringFormatting
             Console.WriteLine($"name: {name}\nage {age}");
 
             Console.Write("enter a name: ");
-            string name1 = Console.ReadLine();
+            string name1 = null; //= Console.ReadLine();
             
-            if (!name1.Equals(""))
+            //if (!name1.Equals(""))
+            //{
+            //    Console.WriteLine($"your name is {name1}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("you do not have a name?");
+            //}
+            if (string.IsNullOrEmpty(name1))
             {
-                Console.WriteLine($"your name is {name1}");
+                Console.WriteLine("HUGE ERROR SOMEWHERE");
             }
             else
             {
-                Console.WriteLine("you do not have a name?");
+                Console.WriteLine("good, good");
             }
-            string sent = "Hello, World";
+                string sent = "Hello, World";
             Console.WriteLine(sent);
             Console.WriteLine(sent[0]);
             Console.WriteLine(sent[1]);
