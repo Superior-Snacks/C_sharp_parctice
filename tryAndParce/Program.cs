@@ -6,23 +6,30 @@ namespace tryAndParce
     {
         static void Main(string[] args)
         {
-            Console.Write("write number:");
-            string getNumber = Console.ReadLine();
-            
             //int number = 0;
             //bool sucsess = int.TryParse(getNumber, out number);
 
-            if (int.TryParse(getNumber, out int number))
+            // tryparce skilar 0 of boolean false
+            bool sucsess = true;
+            while (sucsess)
             {
-                Console.WriteLine("True");
-                Console.WriteLine("sucessful input!!!");
-                Console.WriteLine(number);
+                Console.Write("write number:");
+                string getNumber = Console.ReadLine();
+
+                if (int.TryParse(getNumber, out int number))
+                {
+                    sucsess = false;
+                    Console.WriteLine("True");
+                    Console.WriteLine("sucessful input!!!");
+                    Console.WriteLine(number);
+                }
+                else
+                {
+                    Console.WriteLine("False");
+                    Console.WriteLine("YOU FAIL TO LIVE!!!!1");
+                }
             }
-            else
-            {
-                Console.WriteLine("False");
-                Console.WriteLine("YOU FAIL TO LIVE!!!!1");
-            }
+
 
             Console.ReadLine();
         }
