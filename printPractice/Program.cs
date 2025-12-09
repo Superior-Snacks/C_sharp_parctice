@@ -18,7 +18,7 @@
 
             for (int i = sentance.Length - 1; i >= 0; i--)
             {
-                Thread.Sleep(500);
+                Thread.Sleep(300);
                 Console.Write(sentance[i]);
             }
             Console.ReadLine();
