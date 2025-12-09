@@ -1,4 +1,7 @@
-﻿namespace stringFormatting
+﻿using System.Security.Cryptography;
+using System.Security.Cryptography.X509Certificates;
+
+namespace stringFormatting
 {
     class Program
     {
@@ -28,8 +31,21 @@
             string sent = "Hello, World";
             Console.WriteLine(sent);
             Console.WriteLine(sent[0]);
-            Console.WriteLine(sent[1:3]);
+            Console.WriteLine(sent[1]);
+            Console.WriteLine(sent[2]);
+            Console.WriteLine(sent[3]);
+            Console.WriteLine(sent[4]);
 
+            Console.WriteLine("");
+
+            string floop = "this is a longer string";
+            Console.WriteLine(floop);
+            Console.WriteLine("");
+            
+            for (int i = 0; i < floop.Length; i++)
+            {
+                Console.WriteLine(floop[i]);
+            }
 
             Console.ReadLine();
         }
