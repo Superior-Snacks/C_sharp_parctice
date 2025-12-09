@@ -44,7 +44,9 @@ namespace stringFormatting
             
             for (int i = 0; i < floop.Length; i++)
             {
-                Console.WriteLine(floop[i]);
+                Thread.Sleep(700);
+                Console.Write(floop[i]);
+                
             }
 
             Console.ReadLine();
