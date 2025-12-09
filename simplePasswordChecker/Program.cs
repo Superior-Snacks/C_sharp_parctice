@@ -13,13 +13,14 @@
                 Console.Write("Enter Password: ");
                 password1 = Console.ReadLine();
             }
-            while (!string.IsNullOrEmpty(password1));
+            while (string.IsNullOrEmpty(password1));
 
             string password2;
             do
             {
                 Console.Write("Re-Enter Password: ");
-                password2 = Console.ReadLine()
+                password2 = Console.ReadLine();
+            }
             while (!string.Equals(password1, password2));
 
             Console.WriteLine();
