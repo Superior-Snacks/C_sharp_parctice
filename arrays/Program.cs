@@ -21,7 +21,7 @@
 
             for (int i = 0; i < numbers.Length; i++)
             {
-                Console.Write(numbers[i]);
+                Console.WriteLine(numbers[i]);
             }
 
             for (int i = numbers.Length - 1; i >= 0; i--)
