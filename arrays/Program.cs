@@ -24,6 +24,11 @@
                 Console.Write(numbers[i]);
             }
 
+            for (int i = numbers.Length - 1; i >= 0; i--)
+            {
+                Console.WriteLine(numbers[i]);
+            }
+
 
             Console.ReadLine();
         }
