@@ -28,6 +28,7 @@
 
             for (int i = numbers.Length - 1; i >= 0; i--)
             {
+                Thread.Sleep(400);
                 Console.WriteLine(numbers[i]);
             }
 
