@@ -17,10 +17,19 @@
             Console.Write("Enter a number: ");
             numbers[2] = Convert.ToInt32(Console.ReadLine());
 
+            string[] goals = new string[3];
+
+            goals[0] = "CODING";
+            goals[1] = "DRAWING";
+            goals[2] = "WORKING";
+
+
             Console.WriteLine($"{numbers[0]}, {numbers[1]}, {numbers[2]}");
 
             for (int i = 0; i < numbers.Length; i++)
             {
+                Console.Write("I'M NOT FUCKING STOPPING ");
+                Console.WriteLine(goals[i]);
                 Thread.Sleep(400);
                 Console.WriteLine(numbers[i]);
 
