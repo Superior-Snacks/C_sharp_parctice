@@ -28,6 +28,13 @@
             {
                 Console.WriteLine(item);
             }
+
+            Console.WriteLine("array cleaeing");
+            Array.Clear(numbers);
+            foreach (int item in numbers)
+            {
+                Console.WriteLine(item);
+            }
             Console.ReadLine();
         }
     }
