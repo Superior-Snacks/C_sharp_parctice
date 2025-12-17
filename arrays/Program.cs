@@ -41,6 +41,11 @@
                 Console.WriteLine(numbers[i]);
             }
 
+            foreach (var num in numbers)
+            {
+                Console.Write(num);
+            }
+
 
             Console.ReadLine();
         }
