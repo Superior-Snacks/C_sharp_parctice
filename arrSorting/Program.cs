@@ -21,6 +21,13 @@
             {
                 Console.WriteLine(item);
             }
+
+            Console.WriteLine("reversed");
+            Array.Reverse(numbers);
+            foreach (int item in numbers)
+            {
+                Console.WriteLine(item);
+            }
             Console.ReadLine();
         }
     }
