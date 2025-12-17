@@ -35,14 +35,14 @@
             }
 
             Console.WriteLine("array cleaeing");
-            Array.Clear(numbers);
+            Array.Clear(numbers, 5, 5); // arr, start, ammount
             foreach (int item in numbers)
             {
                 Console.WriteLine(item);
             }
             
             Console.WriteLine("array index of");
-            Array.IndexOf(numbers);
+            //Array.IndexOf(numbers ? 5);
             foreach (int item in numbers)
             {
                 Console.WriteLine(item);
