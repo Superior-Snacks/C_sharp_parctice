@@ -4,11 +4,19 @@
     {
         static void Main(string[] args)
         {
-            int[] numbers = new int[10]
+            int[] numbers = new int[]
             {
-                1,2,3,4,5,6,7,8,9,10
+                9,2,5,4,3,6,7,8,1,10
             };
 
+            foreach (int item in numbers)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("");
+
+            Array.Sort(numbers);
+            Console.WriteLine("sorted");
             foreach (int item in numbers)
             {
                 Console.WriteLine(item);
