@@ -42,11 +42,8 @@
             }
             
             Console.WriteLine("array index of");
-            Array.IndexOf(numbers1, 5);
-            foreach (int item in numbers)
-            {
-                Console.WriteLine(item);
-            }
+            int pos = Array.IndexOf(numbers1, 5);
+            Console.WriteLine(pos);
             Console.ReadLine();
         }
     }
