@@ -42,7 +42,7 @@
             }
             
             Console.WriteLine("array index of");
-            //Array.IndexOf(numbers ? 5);
+            Array.IndexOf(numbers1, 5);
             foreach (int item in numbers)
             {
                 Console.WriteLine(item);
