@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            List<int> list_structure = new List<int>()
+            List<int> list_structure = new List<int>() // lookie here list syntax
             {
                 1,2,3,4,5
             };
