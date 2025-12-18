@@ -6,6 +6,7 @@
         {
             Problem();
             Console.WriteLine(number());
+            Console.WriteLine(answer("tom"));
             Console.ReadLine();
         }
         static void Problem()
@@ -15,6 +16,10 @@
         static int number()
         {
             return 42;
+        }
+        static string answer(string args)
+        {
+            return $"hello {args}";
         }
     }
 }
