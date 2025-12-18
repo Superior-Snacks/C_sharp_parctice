@@ -2,7 +2,7 @@
 {
     class Program
     {
-        static void Main(string args)
+        static void Main(string[] args)
         {
             Dictionary<int, string> names = new Dictionary<int, string>();
             names.Add(0, "Jón");
