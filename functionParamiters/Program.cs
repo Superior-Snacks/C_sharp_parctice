@@ -9,7 +9,7 @@
             string teikna = "Ég vil teikna á morgun";
             string method = "Teikna með 30 min timer";
 
-            List<string> = new List<string>()
+            List<string> thoughts = new List<string>()
             {
                 thePlan,
                 timeing,
@@ -23,6 +23,11 @@
                 {
                     Console.Write(sent[i]);
                 }
+            }
+
+            foreach (string tought in thoughts)
+            {
+                writeToConsole(tought)
             }
 
             
