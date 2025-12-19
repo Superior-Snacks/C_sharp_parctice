@@ -15,19 +15,21 @@
                 timeing,
                 teikna,
                 method
-            }
+            };
 
             static void writeToConsole(string sent)
             {
                 for (int i = 0; i < sent.Length; i++)
                 {
+                    Thread.Sleep(200);
                     Console.Write(sent[i]);
                 }
             }
 
             foreach (string tought in thoughts)
             {
-                writeToConsole(tought)
+                writeToConsole(tought);
+                Console.WriteLine();
             }
 
             
