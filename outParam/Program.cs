@@ -8,9 +8,10 @@
             test(num);
             Console.WriteLine(num);
             Console.WriteLine(test(num));
+
             static int test(int num)
             {
-                num = 0;
+                return 0;
             }
             Console.ReadLine();
         }
