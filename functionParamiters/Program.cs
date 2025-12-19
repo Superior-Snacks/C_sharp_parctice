@@ -5,14 +5,12 @@
         static void Main(string[] args)
         {
             string thePlan = "Two study sessions 1.5 hours long";
-            string timeing = "vera mættur kl 8:30";
             string teikna = "Ég vil teikna á morgun";
             string method = "Teikna með 30 min timer";
 
             List<string> thoughts = new List<string>()
             {
                 thePlan,
-                timeing,
                 teikna,
                 method
             };
