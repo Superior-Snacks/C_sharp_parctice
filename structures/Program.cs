@@ -2,6 +2,7 @@
 {
     class Program
     {
+        //struct fyrir einfalda hluti annars class
         class Person
         {
             public string name;
