@@ -6,13 +6,11 @@
         {
             public string name;
             public int age;
-            public int birthday;
 
-            public Person(string name, int age, int birthday)
+            public Person(string name, int age)
             {
                 this.name = name;
                 this.age = age;
-                this.birthday = birthday;
             }
         }
 
@@ -20,7 +18,10 @@
 
         static void Main(string[] args)
         {
-            Console.WriteLine(createPerson().age);
+            Person person = new Person("abba", 3);
+
+            Console.WriteLine(person.name);
+            Console.WriteLine(person.age);
             Console.ReadLine();
         }
         static Person createPerson()
