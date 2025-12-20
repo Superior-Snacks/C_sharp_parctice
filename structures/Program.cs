@@ -2,18 +2,32 @@
 {
     class Program
     {
-        struct Person
+        class Person
         {
             public string name;
             public int age;
 
+            public Person()
+            {
+                this.name = name;
+                this.age = age;
+            }
+            public Person(string name)
+            {
+                this.name = name;
+                this.age = age;
+            }
+            public Person(int age)
+            {
+                this.name = name;
+                this.age = age;
+            }
             public Person(string name, int age)
             {
                 this.name = name;
                 this.age = age;
             }
         }
-
 
 
         static void Main(string[] args)
@@ -23,13 +37,6 @@
             Console.WriteLine(person.name);
             Console.WriteLine(person.age);
             Console.ReadLine();
-        }
-        static Person createPerson()
-        {
-            int age = 4;
-            string name = "tom";
-            int birhtday = 440;
-            return new Person(name, age, birhtday);
         }
     }
 }
