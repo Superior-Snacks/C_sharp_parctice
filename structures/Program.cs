@@ -20,7 +20,15 @@
 
         static void Main(string[] args)
         {
+            Console.WriteLine(createPerson().age);
             Console.ReadLine();
+        }
+        static Person createPerson()
+        {
+            int age = 4;
+            string name = "tom";
+            int birhtday = 440;
+            return new Person(name, age, birhtday);
         }
     }
 }
