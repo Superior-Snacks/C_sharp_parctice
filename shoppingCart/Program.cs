@@ -19,10 +19,10 @@
             Console.Write(t1);
             print(t1Content);
             Thread.Sleep(200);
-            Console.WriteLine(t2);
+            Console.Write(t2);
             print(t2Content);
             Thread.Sleep(200);
-            Console.WriteLine(t3);
+            Console.Write(t3);
             print(t3Content);
             Console.ReadLine();
         }
