@@ -35,5 +35,14 @@
             }
             Console.WriteLine();
         }
+
+        static List activeShopping()
+        {
+            // while loop till user goes to checkout
+        }
+        static void checkout()
+        {
+            //basicly a lill talk through talling up the total adding tax and stuff 
+        }
     }
 }
