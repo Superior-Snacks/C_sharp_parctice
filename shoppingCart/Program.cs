@@ -12,7 +12,7 @@
             string t3 = "logic: ";
             string t3Content = "add only to cart if spelled correctly, " +
                 "remove from stock when added to cart " +
-                "and do not allow to take more than in stock" +
+                "and do not allow to take more than in stock " +
                 "have a checkout process";
             Console.WriteLine(title);
             Thread.Sleep(200);
