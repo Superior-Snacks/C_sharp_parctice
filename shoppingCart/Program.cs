@@ -10,8 +10,19 @@
             string t2 = "market:";
             string t2Content = "a dictionary of items for sale with price and quantiy availabel";
             string t3 = "logic:";
-            string t3Content = "add only to cart if spelled correctly, "
+            string t3Content = "add only to cart if spelled correctly, " +
+                "remove from stock when added to cart " +
+                "and do not allow to take more than in stock" +
+                "have a checkout process";
             Console.ReadLine();
+        }
+        static void print(string sentance)
+        {
+            for (int i = 0; i < sentance.Length; i++)
+            {
+                Thread.Sleep(200);
+                Console.Write(sentance[i]);
+            }
         }
     }
 }
