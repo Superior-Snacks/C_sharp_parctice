@@ -44,5 +44,10 @@
         {
             //basicly a lill talk through talling up the total adding tax and stuff 
         }
+        static List getItemFomShelf(string item int quantity)
+        {
+            //open file see if there is A. a fitting item B. enough quantity
+            //return either -1 or price
+        }
     }
 }
