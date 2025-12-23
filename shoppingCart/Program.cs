@@ -15,10 +15,13 @@
                 "and do not allow to take more than in stock" +
                 "have a checkout process";
             Console.WriteLine(title);
+            Thread.Sleep(200);
             Console.Write(t1);
             print(t1Content);
+            Thread.Sleep(200);
             Console.WriteLine(t2);
             print(t2Content);
+            Thread.Sleep(200);
             Console.WriteLine(t3);
             print(t3Content);
             Console.ReadLine();
