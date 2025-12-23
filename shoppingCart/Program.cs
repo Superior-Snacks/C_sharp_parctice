@@ -48,6 +48,7 @@
         {
             //open file see if there is A. a fitting item B. enough quantity
             //return either -1 or price
+            // if second time feching then add current quantity to get to maintain the ammount in stock
         }
     }
 }
