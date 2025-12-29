@@ -124,7 +124,7 @@ namespace shoppingCart
         {
             for (int i = 0; i < sentance.Length; i++)
             {
-                Thread.Sleep(20);
+                Thread.Sleep(5);
                 Console.Write(sentance[i]);
             }
             Console.WriteLine();
