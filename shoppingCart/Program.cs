@@ -74,18 +74,20 @@ namespace shoppingCart
             //end script
 
         }
-        static void displayIsle(List<string>isles)
+        static void displayList(List<string>ls)
         {
             //get isles from file
-            for (int i = 0; i < isles.Count; i++)
+            for (int i = 0; i < ls.Count; i++)
             {
-                Console.WriteLine(isles[i]);
+                Console.WriteLine(ls[i]);
             }
         }
         static List<string> shopInIsle(List<string> shoppingCart, string isle)
         {
             //open file for isle
+            List<string> stock = fetchFromFile(isle);
             //dislay stock
+            displayList(stock);
             //shopping loop querry
         }
 
@@ -131,6 +133,13 @@ namespace shoppingCart
             //return either -1 or price
             // if second time feching then add current quantity to get to maintain the ammount in stock
             return frank;
+        }
+
+
+        static List<string> fetchFromFile(string name)
+        {
+            //from folder isles
+            //fech filename
         }
 
         static void print(string sentance)
