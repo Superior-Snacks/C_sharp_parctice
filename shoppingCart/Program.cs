@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.ComponentModel.Design;
+using System.Text;
 
 namespace shoppingCart
 {
@@ -94,7 +95,11 @@ namespace shoppingCart
             {
                 Console.Write("select item: ");
                 hand = Console.ReadLine();
+                //make sure item is spelled correct case insenitive
+                //make sure item is in stock
+                //add to cart
             } while (hand != "return");
+            return shoppingCart;
         }
 
         static List<string> decodeIsles()
