@@ -36,19 +36,28 @@
             Console.WriteLine();
         }
 
-        static List activeShopping()
+        static List<string> activeShopping()
         {
+            List<string> frank = new List<string>()
+            {
+            };
             // while loop till user goes to checkout
+            return frank;
         }
         static void checkout()
         {
             //basicly a lill talk through talling up the total adding tax and stuff 
         }
-        static List getItemFomShelf(string item int quantity)
+        static List<string> getItemFomShelf(string item, int quantity)
         {
+            List<string> frank = new List<string>()
+            {
+            };
+
             //open file see if there is A. a fitting item B. enough quantity
             //return either -1 or price
             // if second time feching then add current quantity to get to maintain the ammount in stock
+            return frank;
         }
     }
 }
