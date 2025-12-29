@@ -32,15 +32,24 @@
             string user;
             List<string> modes = new List<string>()
             {
-                "Shopper", "Owner"
+                "shopper", "owner"
             };
             Console.WriteLine($"{modes[0]}  {modes[1]}");
             do
             {
                 Console.Write("Sellect mode: ");
-                Console.ReadLine();
-                if 
+                user = Console.ReadLine().ToLower();
+                if (user.Equals(modes[0]))
+                {
+                    valid = true;
+                }
+                else if (user.Equals(modes[1]))
+                {
+                    valid = true;
+                }
             } while (!valid);
+            Console.WriteLine("WE GOT THROUGH");
+            Console.ReadLine();
         }
         static void print(string sentance)
         {
