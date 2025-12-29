@@ -79,7 +79,11 @@ namespace shoppingCart
         static List<string> decodeIsles()
         {
             //get name of files in folder
-            List<string> isles = new List<string>() {};
+            List<string> isles = new List<string>() {
+                "dairy",
+                "meat",
+                "canned"
+            };
             return isles;
         }
 
