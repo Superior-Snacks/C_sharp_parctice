@@ -89,12 +89,17 @@ namespace shoppingCart
             //dislay stock
             displayList(stock);
             //shopping loop querry
+            string hand;
+            do
+            {
+
+            } while (hand != "return");
         }
 
         static List<string> decodeIsles()
         {
             //get name of files in folder
-            List<string> isles = new List<string>() {
+            List<string> isles = new List<string>() { // temp
                 "dairy",
                 "meat",
                 "canned"
@@ -109,32 +114,6 @@ namespace shoppingCart
             //add stock or item
             //end script from wherever
         }
-
-
-        static List<string> activeShopping()
-        {
-            List<string> frank = new List<string>()
-            {
-            };
-            // while loop till user goes to checkout
-            return frank;
-        }
-        static void checkout()
-        {
-            //basicly a lill talk through talling up the total adding tax and stuff 
-        }
-        static List<string> getItemFomShelf(string item, int quantity)
-        {
-            List<string> frank = new List<string>()
-            {
-            };
-
-            //open file see if there is A. a fitting item B. enough quantity
-            //return either -1 or price
-            // if second time feching then add current quantity to get to maintain the ammount in stock
-            return frank;
-        }
-
 
         static List<string> fetchFromFile(string name)
         {
