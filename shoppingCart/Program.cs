@@ -42,12 +42,15 @@
                 if (user.Equals(modes[0]))
                 {
                     valid = true;
+                    //shoppingPath(); this is the loop
                 }
                 else if (user.Equals(modes[1]))
                 {
                     valid = true;
+                    //ownerPath(); this is the loop
                 }
             } while (!valid);
+            if 
             Console.WriteLine("WE GOT THROUGH");
             Console.ReadLine();
         }
