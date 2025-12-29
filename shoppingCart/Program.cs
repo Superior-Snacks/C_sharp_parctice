@@ -92,7 +92,8 @@ namespace shoppingCart
             string hand;
             do
             {
-
+                Console.Write("select item: ");
+                hand = Console.ReadLine();
             } while (hand != "return");
         }
 
