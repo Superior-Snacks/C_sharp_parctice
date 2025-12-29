@@ -61,6 +61,12 @@ namespace shoppingCart
             List<string> isles = decodeIsles();
             List<string> shoppingCart = new List<string>() {};
             displayIsle(isles);
+            string isleChoice;
+            do
+            {
+                Console.Write("choose isle: ");
+                isleChoice = Console.ReadLine();
+            } while (!isles.Contains(isleChoice);
             //loop for isle sellect
             //loop for item sellect
             //return from isle
@@ -76,6 +82,13 @@ namespace shoppingCart
                 Console.WriteLine(isles[i]);
             }
         }
+        static List<string> shopInIsle(List<string> shoppingCart, string isle)
+        {
+            //open file for isle
+            //dislay stock
+            //shopping loop querry
+        }
+
         static List<string> decodeIsles()
         {
             //get name of files in folder
