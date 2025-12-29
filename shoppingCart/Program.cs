@@ -1,4 +1,6 @@
-﻿namespace shoppingCart
+﻿using System.Text;
+
+namespace shoppingCart
 {
     class Program
     {
@@ -56,8 +58,9 @@
 
         static void shoppingPath()
         {
-            List<string> shoppingCart = new List<string>();
-            displayIsle();
+            List<string> isles = decodeIsles();
+            List<string> shoppingCart = new List<string>() {};
+            displayIsle(isles);
             //loop for isle sellect
             //loop for item sellect
             //return from isle
@@ -72,6 +75,12 @@
             {
                 Console.WriteLine(isles[i]);
             }
+        }
+        static List<string> decodeIsles()
+        {
+            //get name of files in folder
+            List<string> isles = new List<string>() {};
+            return isles;
         }
 
         static void ownerPath()
