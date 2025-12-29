@@ -25,12 +25,28 @@
             Console.Write(t3);
             print(t3Content);
             Console.ReadLine();
+            //mode controll, shopper, owner
+            //owner: querry loop, add stock and price change
+            //shopper: qerry isle displ, stock displ, add to cart loop
+            bool valid = false;
+            string user;
+            List<string> modes = new List<string>()
+            {
+                "Shopper", "Owner"
+            };
+            Console.WriteLine($"{modes[0]}  {modes[1]}");
+            do
+            {
+                Console.Write("Sellect mode: ");
+                Console.ReadLine();
+                if 
+            } while (!valid);
         }
         static void print(string sentance)
         {
             for (int i = 0; i < sentance.Length; i++)
             {
-                Thread.Sleep(200);
+                Thread.Sleep(20);
                 Console.Write(sentance[i]);
             }
             Console.WriteLine();
