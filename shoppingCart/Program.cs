@@ -42,7 +42,7 @@
                 if (user.Equals(modes[0]))
                 {
                     valid = true;
-                    //shoppingPath(); this is the loop
+                    shoppingPath();
                 }
                 else if (user.Equals(modes[1]))
                 {
@@ -50,19 +50,28 @@
                     //ownerPath(); this is the loop
                 }
             } while (!valid);
-            if 
             Console.WriteLine("WE GOT THROUGH");
             Console.ReadLine();
         }
-        static void print(string sentance)
+
+        static void shoppingPath()
         {
-            for (int i = 0; i < sentance.Length; i++)
-            {
-                Thread.Sleep(20);
-                Console.Write(sentance[i]);
-            }
-            Console.WriteLine();
+            //loop for isle sellect
+            //loop for item sellect
+            //return from isle
+            //send list to checkout
+            //end script
+
         }
+
+        static void ownerPath()
+        {
+            //loop for isle
+            //prompt for adding stock or adding item
+            //add stock or item
+            //end script from wherever
+        }
+
 
         static List<string> activeShopping()
         {
@@ -86,6 +95,16 @@
             //return either -1 or price
             // if second time feching then add current quantity to get to maintain the ammount in stock
             return frank;
+        }
+
+        static void print(string sentance)
+        {
+            for (int i = 0; i < sentance.Length; i++)
+            {
+                Thread.Sleep(20);
+                Console.Write(sentance[i]);
+            }
+            Console.WriteLine();
         }
     }
 }
