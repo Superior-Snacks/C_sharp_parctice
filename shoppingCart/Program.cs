@@ -56,12 +56,22 @@
 
         static void shoppingPath()
         {
+            List<string> shoppingCart = new List<string>();
+            displayIsle();
             //loop for isle sellect
             //loop for item sellect
             //return from isle
             //send list to checkout
             //end script
 
+        }
+        static void displayIsle(List<string>isles)
+        {
+            //get isles from file
+            for (int i = 0; i < isles.Count; i++)
+            {
+                Console.WriteLine(isles[i]);
+            }
         }
 
         static void ownerPath()
