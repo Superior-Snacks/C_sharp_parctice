@@ -1,2 +1,2 @@
-beef
-lamb
+beef,10,10.00$
+lamb,5,20.50$
