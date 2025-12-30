@@ -125,7 +125,6 @@ namespace shoppingCart
             foreach (string file in Directory.EnumerateFiles(path))
             {
                 isles.Add(file);
-            }
             };
             return isles;
         }
