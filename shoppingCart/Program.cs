@@ -46,7 +46,7 @@ namespace shoppingCart
                 if (user.Equals(modes[0]))
                 {
                     valid = true;
-                    shoppingPath();
+                    shoppingPath(storePath);
                 }
                 else if (user.Equals(modes[1]))
                 {
@@ -58,7 +58,7 @@ namespace shoppingCart
             Console.ReadLine();
         }
 
-        static void shoppingPath()
+        static void shoppingPath(string storePath)
         {
             List<string> isles = decodeIsles();
             List<string> shoppingCart = new List<string>() {};
@@ -71,14 +71,14 @@ namespace shoppingCart
                 {
                     Console.Write("choose isle: ");
                     isleChoice = Console.ReadLine();
-                } while (!isles.Contains(isleChoice) | isleChoice.Equals("checkout");
+                } while (!isles.Contains(isleChoice) | isleChoice.Equals("checkout"));
                 if (isleChoice.Equals("checkout"))
                 {
                     shopping = false;
                 }
                 else
                 {
-                    shoppingCart = shopInIsle(shoppingCart, isleChoice);
+                    shoppingCart = shopInIsle(shoppingCart, storePath, isleChoice);
                 }
             }
             checkout(shoppingCart);
@@ -91,10 +91,10 @@ namespace shoppingCart
                 Console.WriteLine(ls[i]);
             }
         }
-        static List<string> shopInIsle(List<string> shoppingCart, string isle)
+        static List<string> shopInIsle(List<string> shoppingCart, string storePath,  string isle)
         {
             //open file for isle
-            List<string> stock = fetchFromFile(isle);
+            List<string> stock = fetchFromFile(storePath, isle);
             //dislay stock
             displayList(stock);
             //shopping loop querry
@@ -124,6 +124,7 @@ namespace shoppingCart
             foreach (string file in Directory.EnumerateFiles(path))
             {
                 isles.Add(file);
+                Console.WriteLine(file);
             };
             return isles;
         }
