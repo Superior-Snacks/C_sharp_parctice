@@ -83,7 +83,7 @@ namespace shoppingCart
                     shoppingCart = shopInIsle(cartPath, storePath, isleChoice);
                 }
             }
-            checkout(cartPath, storePath);
+            checkout(cartPath, storePath, isles);
         }
         static void displayList(List<string>ls)
         {
@@ -135,6 +135,10 @@ namespace shoppingCart
 
         static void checkout(string cartPath, string storePath)
         {
+            List<string> items = fetchFromFile(storePath, isle, ".txt", 0, "\\");
+            List<string> stock = fetchFromFile(storePath, isle, ".txt", 1, "\\");
+            List<string> price = fetchFromFile(storePath, isle, ".txt", 2, "\\");
+            List<string> shoppingCart = shoppingCart = fetchFromFile(cartPath, "", "", 0, "");
             //go through the lsit in a for loop print out the list and the price adding tax as it goes
             //add litle chats 
             //goodbye
@@ -198,3 +202,6 @@ namespace shoppingCart
         }
     }
 }
+
+//TODO CHECOUT:UPDATE STOCK AND ADD TO HOME AND REMOVE FROM CART
+//TODO OPTIONAL OWNER MODE
