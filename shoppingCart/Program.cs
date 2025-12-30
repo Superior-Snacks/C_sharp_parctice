@@ -67,11 +67,12 @@ namespace shoppingCart
             bool shopping = true;
             while (shopping)
             {
+                Console.WriteLine("while");
                 do
                 {
                     Console.Write("choose isle: ");
                     isleChoice = Console.ReadLine();
-                } while (!isles.Contains(isleChoice) | isleChoice.Equals("checkout"));
+                } while (!isles.Contains(isleChoice) && !isleChoice.Equals("checkout"));
                 if (isleChoice.Equals("checkout"))
                 {
                     shopping = false;
