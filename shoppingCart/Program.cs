@@ -95,18 +95,29 @@ namespace shoppingCart
         static List<string> shopInIsle(List<string> shoppingCart, string storePath,  string isle)
         {
             //open file for isle
-            List<string> stock = fetchFromFile(storePath, isle);
+            List<string> items = fetchFromFile(storePath, isle, 0);
+            List<string> stock = fetchFromFile(storePath, isle, 1);
+            List<string> price = fetchFromFile(storePath, isle, 2);
+            
             //dislay stock
             displayList(stock);
             //shopping loop querry
             string hand;
+            int inCart
             do
             {
                 Console.Write("select item: ");
                 hand = Console.ReadLine();
-                if (stock.Contains(hand.ToLower()))
+                if (items.Contains(hand.ToLower()))
                 {
-                    Console.WriteLine($"added {hand} to cart");
+                    int idx = items.Index(hand);
+                    inCart 
+                    if (stock[idx] - inCart >= 0)
+                    {
+                        Console.WriteLine($"added {hand} to cart");
+                        //update shoppingCArt
+                    }
+
                 }
                 //make sure item is spelled correct case insenitive
                 //make sure item is in stock
@@ -142,6 +153,18 @@ namespace shoppingCart
             //prompt for adding stock or adding item
             //add stock or item
             //end script from wherever
+        }
+
+        static int countInCart(List<string> shoppingCart, string hand)
+        {
+            int count = 0;
+            foreach (string item in shoppingCart)
+            {
+                if item.Equals(hand){
+                    count++;
+                }
+            }
+            return count;
         }
 
         static List<string> fetchFromFile(string storePath, string name, int dataType=0)
