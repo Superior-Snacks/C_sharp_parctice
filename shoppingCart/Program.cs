@@ -116,6 +116,7 @@ namespace shoppingCart
             //go through the lsit in a for loop print out the list and the price adding tax as it goes
             //add litle chats 
             //goodbye
+            Console.WriteLine("done");
         }
 
         static List<string> decodeIsles(string path)
