@@ -122,10 +122,12 @@ namespace shoppingCart
         static List<string> decodeIsles(string path)
         {
             List<string> isles = new List<string>();
+            string fileName;
             foreach (string file in Directory.EnumerateFiles(path))
             {
-                isles.Add(file);
-                Console.WriteLine(file);
+                fileName = Path.GetFileNameWithoutExtension(file);
+                isles.Add(fileName);
+                Console.WriteLine(fileName);
             };
             return isles;
         }
