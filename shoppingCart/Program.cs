@@ -119,9 +119,10 @@ namespace shoppingCart
 
         static List<string> decodeIsles()
         {
+            string path = "C:\\Users\\jonin\\source\\repos\\C_sharp_parctice\\shoppingCart\\Store";
             List<string> isles = new List<string>();
             Directory.EnumerateFiles("store");
-            foreach (string file in Directory.EnumerateFiles("store"))
+            foreach (string file in Directory.EnumerateFiles(path))
             {
                 isles.Add(file);
             }
