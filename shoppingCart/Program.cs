@@ -144,18 +144,17 @@ namespace shoppingCart
             //end script from wherever
         }
 
-        static List<string> fetchFromFile(string storePath, string name)
+        static List<string> fetchFromFile(string storePath, string name, int dataType=0)
         {
             List<string> result = new List<string>();
             string filePath = storePath + "\\" + name + ".txt";
             Console.WriteLine(filePath);
             Console.ReadLine();
             var output = File.ReadAllLines(filePath);
-            Console.WriteLine(output);//NOOOOOOOOOOOOOOOOOOOOOOOOO FUCKNG IDEA WHAT WILL HAPPEN HERE
-            Console.WriteLine("test");
             foreach (var item in output)
             {
-                result.Add(item);
+                string[] temp = item.Split(",");
+                result.Add(temp[dataType]);
             }
             return result;
         }
