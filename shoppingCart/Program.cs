@@ -60,7 +60,7 @@ namespace shoppingCart
 
         static void shoppingPath(string storePath)
         {
-            List<string> isles = decodeIsles();
+            List<string> isles = decodeIsles(storePath);
             List<string> shoppingCart = new List<string>() {};
             displayList(isles);
             string isleChoice;
@@ -139,9 +139,15 @@ namespace shoppingCart
 
         static List<string> fetchFromFile(string storePath, string name)
         {
+            List<string> result = new List<string>();
             string filePath = storePath + "\\" + name;
             var output = File.ReadAllLines(filePath);
             Console.WriteLine(output);//NOOOOOOOOOOOOOOOOOOOOOOOOO FUCKNG IDEA WHAT WILL HAPPEN HERE
+            foreach (var item in output)
+            {
+                result.Add(item);
+            }
+            return result;
         }
 
         static void print(string sentance)
