@@ -139,7 +139,9 @@ namespace shoppingCart
 
         static List<string> fetchFromFile(string storePath, string name)
         {
-            string filePath = storePath + "\\" + name; 
+            string filePath = storePath + "\\" + name;
+            var output = File.ReadAllLines(filePath);
+            Console.WriteLine(output);//NOOOOOOOOOOOOOOOOOOOOOOOOO FUCKNG IDEA WHAT WILL HAPPEN HERE
         }
 
         static void print(string sentance)
