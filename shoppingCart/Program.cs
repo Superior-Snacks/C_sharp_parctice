@@ -71,7 +71,7 @@ namespace shoppingCart
                 {
                     Console.Write("choose isle: ");
                     isleChoice = Console.ReadLine();
-                } while (!isles.Contains(isleChoice) || isleChoice.Equals("checkout");
+                } while (!isles.Contains(isleChoice) | isleChoice.Equals("checkout");
                 if (isleChoice.Equals("checkout"))
                 {
                     shopping = false;
@@ -82,7 +82,6 @@ namespace shoppingCart
                 }
             }
             checkout(shoppingCart);
-
         }
         static void displayList(List<string>ls)
         {
