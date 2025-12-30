@@ -31,7 +31,7 @@ namespace shoppingCart
             //mode controll, shopper, owner
             //owner: querry loop, add stock and price change
             //shopper: qerry isle displ, stock displ, add to cart loop
-            string path = "C:\\Users\\jonin\\source\\repos\\C_sharp_parctice\\shoppingCart\\Store";
+            string storePath = "C:\\Users\\jonin\\source\\repos\\C_sharp_parctice\\shoppingCart\\Store";
             bool valid = false;
             string user;
             List<string> modes = new List<string>()
@@ -118,7 +118,7 @@ namespace shoppingCart
             //goodbye
         }
 
-        static List<string> decodeIsles()
+        static List<string> decodeIsles(string path)
         {
             List<string> isles = new List<string>();
             Directory.EnumerateFiles("store");
@@ -137,10 +137,9 @@ namespace shoppingCart
             //end script from wherever
         }
 
-        static List<string> fetchFromFile(string name)
+        static List<string> fetchFromFile(string storePath, string name)
         {
-            //from folder isles
-            //fech filename
+            string filePath = storePath + "\\" + name; 
         }
 
         static void print(string sentance)
