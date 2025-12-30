@@ -6,7 +6,7 @@ namespace shoppingCart
     class Program
     {
         static void Main(string[] args)
-        {
+        {/*
             string title = "TODO";
             string t1 = "shoppingcart: ";
             string t1Content = "adding list of items";
@@ -27,7 +27,7 @@ namespace shoppingCart
             Thread.Sleep(200);
             Console.Write(t3);
             print(t3Content);
-            Console.ReadLine();
+            Console.ReadLine();*/
             //mode controll, shopper, owner
             //owner: querry loop, add stock and price change
             //shopper: qerry isle displ, stock displ, add to cart loop
@@ -119,11 +119,12 @@ namespace shoppingCart
 
         static List<string> decodeIsles()
         {
-            //get name of files in folder
-            List<string> isles = new List<string>() { // temp
-                "dairy",
-                "meat",
-                "canned"
+            List<string> isles = new List<string>();
+            Directory.EnumerateFiles("store");
+            foreach (string file in Directory.EnumerateFiles("store"))
+            {
+                isles.Add(file);
+            }
             };
             return isles;
         }
