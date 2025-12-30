@@ -133,11 +133,11 @@ namespace shoppingCart
             return shoppingCart;
         }
 
-        static void checkout(string cartPath, string storePath)
+        static void checkout(string cartPath, string storePath, List<string> isles)
         {
-            List<string> items = fetchFromFile(storePath, isle, ".txt", 0, "\\");
-            List<string> stock = fetchFromFile(storePath, isle, ".txt", 1, "\\");
-            List<string> price = fetchFromFile(storePath, isle, ".txt", 2, "\\");
+            List<string> items = fetchFromFile(storePath, "isles", ".txt", 0, "\\"); //this
+            List<string> stock = fetchFromFile(storePath, "isles", ".txt", 1, "\\"); //is
+            List<string> price = fetchFromFile(storePath, "isles", ".txt", 2, "\\"); //wrong
             List<string> shoppingCart = shoppingCart = fetchFromFile(cartPath, "", "", 0, "");
             //go through the lsit in a for loop print out the list and the price adding tax as it goes
             //add litle chats 
