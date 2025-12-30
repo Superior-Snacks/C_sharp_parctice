@@ -104,6 +104,10 @@ namespace shoppingCart
             {
                 Console.Write("select item: ");
                 hand = Console.ReadLine();
+                if (stock.Contains(hand.ToLower()))
+                {
+                    Console.WriteLine($"added {hand} to cart");
+                }
                 //make sure item is spelled correct case insenitive
                 //make sure item is in stock
                 //add to cart
@@ -143,9 +147,12 @@ namespace shoppingCart
         static List<string> fetchFromFile(string storePath, string name)
         {
             List<string> result = new List<string>();
-            string filePath = storePath + "\\" + name;
+            string filePath = storePath + "\\" + name + ".txt";
+            Console.WriteLine(filePath);
+            Console.ReadLine();
             var output = File.ReadAllLines(filePath);
             Console.WriteLine(output);//NOOOOOOOOOOOOOOOOOOOOOOOOO FUCKNG IDEA WHAT WILL HAPPEN HERE
+            Console.WriteLine("test");
             foreach (var item in output)
             {
                 result.Add(item);
