@@ -71,7 +71,14 @@ namespace shoppingCart
                     Console.Write("choose isle: ");
                     isleChoice = Console.ReadLine();
                 } while (!isles.Contains(isleChoice) || isleChoice.Equals("checkout");
-                shoppingCart = shopInIsle(shoppingCart, isleChoice);
+                if (isleChoice.Equals("checkout"))
+                {
+                    shopping = false;
+                }
+                else
+                {
+                    shoppingCart = shopInIsle(shoppingCart, isleChoice);
+                }
             }
             //loop for isle sellect
             //loop for item sellect
