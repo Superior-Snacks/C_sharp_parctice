@@ -80,11 +80,7 @@ namespace shoppingCart
                     shoppingCart = shopInIsle(shoppingCart, isleChoice);
                 }
             }
-            //loop for isle sellect
-            //loop for item sellect
-            //return from isle
-            //send list to checkout
-            //end script
+            checkout(shoppingCart);
 
         }
         static void displayList(List<string>ls)
@@ -112,6 +108,11 @@ namespace shoppingCart
                 //add to cart
             } while (hand != "return");
             return shoppingCart;
+        }
+
+        static void checkout(List<string> shoppingCart)
+        {
+
         }
 
         static List<string> decodeIsles()
