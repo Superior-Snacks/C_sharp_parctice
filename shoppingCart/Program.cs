@@ -32,6 +32,7 @@ namespace shoppingCart
             //owner: querry loop, add stock and price change
             //shopper: qerry isle displ, stock displ, add to cart loop
             string storePath = "C:\\Users\\jonin\\source\\repos\\C_sharp_parctice\\shoppingCart\\Store";
+            string cartPath = "C:\\Users\\jonin\\source\\repos\\C_sharp_parctice\\shoppingCart\\currentShoppingCart.txt";
             bool valid = false;
             string user;
             List<string> modes = new List<string>()
@@ -46,7 +47,7 @@ namespace shoppingCart
                 if (user.Equals(modes[0]))
                 {
                     valid = true;
-                    shoppingPath(storePath);
+                    shoppingPath(storePath, cartPath);
                 }
                 else if (user.Equals(modes[1]))
                 {
@@ -58,7 +59,7 @@ namespace shoppingCart
             Console.ReadLine();
         }
 
-        static void shoppingPath(string storePath)
+        static void shoppingPath(string storePath, string cartPath)
         {
             List<string> isles = decodeIsles(storePath);
             List<string> shoppingCart = new List<string>() {};
@@ -79,10 +80,10 @@ namespace shoppingCart
                 }
                 else
                 {
-                    shoppingCart = shopInIsle(shoppingCart, storePath, isleChoice);
+                    shoppingCart = shopInIsle(cartPath, storePath, isleChoice);
                 }
             }
-            checkout(shoppingCart);
+            checkout(cartPath, storePath);
         }
         static void displayList(List<string>ls)
         {
@@ -92,41 +93,47 @@ namespace shoppingCart
                 Console.WriteLine(ls[i]);
             }
         }
-        static List<string> shopInIsle(List<string> shoppingCart, string storePath,  string isle)
+        static List<string> shopInIsle(string cartPath, string storePath,  string isle)
         {
             //open file for isle
-            List<string> items = fetchFromFile(storePath, isle, 0);
-            List<string> stock = fetchFromFile(storePath, isle, 1);
-            List<string> price = fetchFromFile(storePath, isle, 2);
+            List<string> items = fetchFromFile(storePath, isle, ".txt", 0, "\\");
+            List<string> stock = fetchFromFile(storePath, isle, ".txt", 1, "\\");
+            List<string> price = fetchFromFile(storePath, isle, ".txt", 2, "\\");
+            List<string> shoppingCart;
+
             
             //dislay stock
-            displayList(stock);
+            displayList(items);
             //shopping loop querry
             string hand;
-            int inCart
+            int inCart;
             do
             {
+                shoppingCart = fetchFromFile(cartPath, "", "", 0, "");
                 Console.Write("select item: ");
                 hand = Console.ReadLine().ToLower();
                 if (items.Contains(hand.ToLower()))
                 {
-                    int idx = items.Index(hand);
-                    inCart = countInCart(shoppingCart, hand)
-                    if (stock[idx] - inCart >= 0)
+                    int idx = Convert.ToInt32(stock[items.IndexOf(hand)]);
+                    inCart = countInCart(shoppingCart, hand);
+                    Console.WriteLine(idx);
+                    Console.WriteLine(inCart);
+                    if (idx - inCart > 0)
                     {
                         Console.WriteLine($"added {hand} to cart");
-                        //update shoppingCArt
+                        File.AppendAllText(cartPath, hand + Environment.NewLine);
+                    }
+                    else
+                    {
+                        Console.WriteLine("OUT OF STOCK");
                     }
 
                 }
-                //make sure item is spelled correct case insenitive
-                //make sure item is in stock
-                //add to cart
             } while (hand != "return");
             return shoppingCart;
         }
 
-        static void checkout(List<string> shoppingCart)
+        static void checkout(string cartPath, string storePath)
         {
             //go through the lsit in a for loop print out the list and the price adding tax as it goes
             //add litle chats 
@@ -160,19 +167,17 @@ namespace shoppingCart
             int count = 0;
             foreach (string item in shoppingCart)
             {
-                if item.Equals(hand){
+                if (item.Equals(hand)){
                     count++;
                 }
             }
             return count;
         }
 
-        static List<string> fetchFromFile(string storePath, string name, int dataType=0)
+        static List<string> fetchFromFile(string storePath, string name, string fileType, int dataType=0, string slash = "\\")
         {
             List<string> result = new List<string>();
-            string filePath = storePath + "\\" + name + ".txt";
-            Console.WriteLine(filePath);
-            Console.ReadLine();
+            string filePath = storePath + slash + name + fileType;
             var output = File.ReadAllLines(filePath);
             foreach (var item in output)
             {
