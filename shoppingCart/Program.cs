@@ -107,11 +107,11 @@ namespace shoppingCart
             do
             {
                 Console.Write("select item: ");
-                hand = Console.ReadLine();
+                hand = Console.ReadLine().ToLower();
                 if (items.Contains(hand.ToLower()))
                 {
                     int idx = items.Index(hand);
-                    inCart 
+                    inCart = countInCart(shoppingCart, hand)
                     if (stock[idx] - inCart >= 0)
                     {
                         Console.WriteLine($"added {hand} to cart");
