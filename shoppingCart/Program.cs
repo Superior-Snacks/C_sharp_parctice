@@ -61,13 +61,18 @@ namespace shoppingCart
         {
             List<string> isles = decodeIsles();
             List<string> shoppingCart = new List<string>() {};
-            displayIsle(isles);
+            displayList(isles);
             string isleChoice;
-            do
+            bool shopping = true;
+            while (shopping)
             {
-                Console.Write("choose isle: ");
-                isleChoice = Console.ReadLine();
-            } while (!isles.Contains(isleChoice);
+                do
+                {
+                    Console.Write("choose isle: ");
+                    isleChoice = Console.ReadLine();
+                } while (!isles.Contains(isleChoice) || isleChoice.Equals("checkout");
+                shoppingCart = shopInIsle(shoppingCart, isleChoice);
+            }
             //loop for isle sellect
             //loop for item sellect
             //return from isle
