@@ -165,6 +165,7 @@ namespace shoppingCart
 
 
             }
+            File.WriteAllText(cartPath, string.Empty);
             Console.WriteLine($"that will be a total of {runningTotal}$");
             Console.WriteLine("checked out");
             Console.ReadLine();
