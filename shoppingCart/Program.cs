@@ -159,7 +159,10 @@ namespace shoppingCart
                 print($"*BEEP* {currItem} cost {rlPrice} *BEEP*");
                 runningTotal += rlPrice;
 
-                
+                updateStockInFile(storePath, currIsle, currItem)
+
+
+
 
             }
             Console.WriteLine($"that will be a total of {runningTotal}$");
@@ -211,6 +214,41 @@ namespace shoppingCart
                 result.Add(temp[dataType]);
             }
             return result;
+        }
+
+        static void updateStockInFile(string storePath, string isle, string itemToUpdate)
+        {
+            string filePath = storePath + "\\" + isle + ".txt";
+            string[] lines = File.ReadAllLines(filePath);
+
+            for (int i = 0; i < lines.Length; i++)
+            {
+                // Break the line apart: "apple,10,0.99" -> ["apple", "10", "0.99"]
+                string[] parts = lines[i].Split(',');
+
+                // Check if this is the item we want
+                if (parts[0].Equals(itemToUpdate, StringComparison.OrdinalIgnoreCase))
+                {
+                    // Parse current stock
+                    int currentStock = int.Parse(parts[1]);
+
+                    // Decrease stock
+                    if (currentStock > 0)
+                    {
+                        currentStock--;
+                        parts[1] = currentStock.ToString();
+                    }
+
+                    // Rebuild the line: "apple" + "," + "9" + "," + "0.99"
+                    lines[i] = string.Join(",", parts);
+
+                    // We found it, so we can stop looping
+                    break;
+                }
+            }
+
+            // Overwrite the file with the updated lines
+            File.WriteAllLines(filePath, lines);
         }
 
         static void print(string sentance)
