@@ -135,12 +135,31 @@ namespace shoppingCart
 
         static void checkout(string cartPath, string storePath, List<string> isles)
         {
-            List<string> items = fetchFromFile(storePath, "isles", ".txt", 0, "\\"); //this
-            List<string> stock = fetchFromFile(storePath, "isles", ".txt", 1, "\\"); //is
-            List<string> price = fetchFromFile(storePath, "isles", ".txt", 2, "\\"); //wrong
-            List<string> shoppingCart = shoppingCart = fetchFromFile(cartPath, "", "", 0, "");
+            string currItem;
+            string currIsle;
+            int rlStock;
+            int rlPrice;
+            List<string> items; //this
+            List<string> stock; //is
+            List<string> price; //wrong
+            List<string> shoppingCart = fetchFromFile(cartPath, "", "", 0, "");
             List<string> isle = fetchFromFile(cartPath, "", "", 1, "");
 
+            for (int i = 0; i < shoppingCart.Count; i++)
+            {
+                currItem = shoppingCart[i];
+                currIsle = isle[i];
+                items = fetchFromFile(storePath, currIsle, ".txt", 0, "\\");
+                stock = fetchFromFile(storePath, currIsle, ".txt", 1, "\\");
+                price = fetchFromFile(storePath, currIsle, ".txt", 2, "\\");
+                rlStock = Convert.ToInt32(stock[items.IndexOf(currItem)]);
+                rlPrice = Convert.ToInt32(price[items.IndexOf(currItem)]);
+
+                Console.WriteLine($"*BEEP* {currItem} cost {rlPrice} *BEEP*");
+
+                
+
+            }
             //go through the lsit in a for loop print out the list and the price adding tax as it goes
             //add litle chats 
             //goodbye
