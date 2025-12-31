@@ -121,7 +121,7 @@ namespace shoppingCart
                     if (idx - inCart > 0)
                     {
                         Console.WriteLine($"added {hand} to cart");
-                        File.AppendAllText(cartPath, isle + ", " + hand + Environment.NewLine);
+                        File.AppendAllText(cartPath, isle + "," + hand + Environment.NewLine);
                     }
                     else
                     {
