@@ -139,6 +139,7 @@ namespace shoppingCart
             string currIsle;
             double rlStock;
             double rlPrice;
+            double runningTotal;
             List<string> items;
             List<string> stock;
             List<string> price;
@@ -148,33 +149,23 @@ namespace shoppingCart
 
             for (int i = 0; i < shoppingCart.Count; i++)
             {
-                Console.WriteLine(i);
                 currItem = shoppingCart[i];
                 currIsle = isle[i];
-                Console.WriteLine(currIsle);
-                Console.ReadLine();
 
                 items = fetchFromFile(storePath, currIsle, ".txt", 0, "\\");
-                Console.ReadLine();
                 stock = fetchFromFile(storePath, currIsle, ".txt", 1, "\\");
-                Console.ReadLine();
                 price = fetchFromFile(storePath, currIsle, ".txt", 2, "\\");
-                Console.ReadLine();
-                rlStock = Convert.ToInt32(stock[items.IndexOf(currItem)]);
-                Console.ReadLine();
-                rlPrice = Convert.ToInt32(price[items.IndexOf(currItem)]);
-                Console.ReadLine();
-
-                Console.WriteLine($"*BEEP* {currItem} cost {rlPrice} *BEEP*");
+                rlStock = Convert.ToDouble(stock[items.IndexOf(currItem)]);
+                rlPrice = Convert.ToDouble(price[items.IndexOf(currItem)]);
+                Thread.Sleep(200);
+                print($"*BEEP* {currItem} cost {rlPrice} *BEEP*");
+                runningTotal += rlPrice;
 
                 
 
             }
-            Console.ReadLine();
-            //go through the lsit in a for loop print out the list and the price adding tax as it goes
-            //add litle chats 
-            //goodbye
-            Console.WriteLine("done");
+            Console.WriteLine($"that will be a total of {runningTotal}");
+            Console.WriteLine("checked out");
         }
 
         static List<string> decodeIsles(string path)
