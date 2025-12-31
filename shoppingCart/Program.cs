@@ -109,7 +109,7 @@ namespace shoppingCart
             int inCart;
             do
             {
-                shoppingCart = fetchFromFile(cartPath, "", "", 0, "");
+                shoppingCart = fetchFromFile(cartPath, "", "", 1, "");
                 Console.Write("select item: ");
                 hand = Console.ReadLine().ToLower();
                 if (items.Contains(hand.ToLower()))
@@ -139,6 +139,8 @@ namespace shoppingCart
             List<string> stock = fetchFromFile(storePath, "isles", ".txt", 1, "\\"); //is
             List<string> price = fetchFromFile(storePath, "isles", ".txt", 2, "\\"); //wrong
             List<string> shoppingCart = shoppingCart = fetchFromFile(cartPath, "", "", 0, "");
+            List<string> isle = fetchFromFile(cartPath, "", "", 1, "");
+
             //go through the lsit in a for loop print out the list and the price adding tax as it goes
             //add litle chats 
             //goodbye
