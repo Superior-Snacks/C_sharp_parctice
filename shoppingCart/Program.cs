@@ -137,23 +137,33 @@ namespace shoppingCart
         {
             string currItem;
             string currIsle;
-            int rlStock;
-            int rlPrice;
-            List<string> items; //this
-            List<string> stock; //is
-            List<string> price; //wrong
-            List<string> shoppingCart = fetchFromFile(cartPath, "", "", 0, "");
-            List<string> isle = fetchFromFile(cartPath, "", "", 1, "");
+            double rlStock;
+            double rlPrice;
+            List<string> items;
+            List<string> stock;
+            List<string> price;
+            List<string> shoppingCart = fetchFromFile(cartPath, "", "", 1, "");
+            List<string> isle = fetchFromFile(cartPath, "", "", 0, "");
+            Console.WriteLine(1);
 
             for (int i = 0; i < shoppingCart.Count; i++)
             {
+                Console.WriteLine(i);
                 currItem = shoppingCart[i];
                 currIsle = isle[i];
+                Console.WriteLine(currIsle);
+                Console.ReadLine();
+
                 items = fetchFromFile(storePath, currIsle, ".txt", 0, "\\");
+                Console.ReadLine();
                 stock = fetchFromFile(storePath, currIsle, ".txt", 1, "\\");
+                Console.ReadLine();
                 price = fetchFromFile(storePath, currIsle, ".txt", 2, "\\");
+                Console.ReadLine();
                 rlStock = Convert.ToInt32(stock[items.IndexOf(currItem)]);
+                Console.ReadLine();
                 rlPrice = Convert.ToInt32(price[items.IndexOf(currItem)]);
+                Console.ReadLine();
 
                 Console.WriteLine($"*BEEP* {currItem} cost {rlPrice} *BEEP*");
 

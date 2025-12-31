@@ -1,2 +1,2 @@
-canned tuna,3000,0.90$
-canned beans,500,0.80$
+canned tuna,3000,0.90
+canned beans,500,0.80
