@@ -55,8 +55,6 @@ namespace shoppingCart
                     //ownerPath(); this is the loop
                 }
             } while (!valid);
-            Console.WriteLine("WE GOT THROUGH");
-            Console.ReadLine();
         }
 
         static void shoppingPath(string storePath, string cartPath)
@@ -139,7 +137,7 @@ namespace shoppingCart
             string currIsle;
             double rlStock;
             double rlPrice;
-            double runningTotal;
+            double runningTotal = 0;
             List<string> items;
             List<string> stock;
             List<string> price;
@@ -164,8 +162,9 @@ namespace shoppingCart
                 
 
             }
-            Console.WriteLine($"that will be a total of {runningTotal}");
+            Console.WriteLine($"that will be a total of {runningTotal}$");
             Console.WriteLine("checked out");
+            Console.ReadLine();
         }
 
         static List<string> decodeIsles(string path)
