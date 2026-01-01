@@ -1,7 +1,0 @@
-meat,lamb
-meat,lamb
-meat,beef
-dariry,milk
-dariry,milk
-meat,lamb
-meat,beef

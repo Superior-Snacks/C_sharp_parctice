@@ -33,28 +33,7 @@ namespace shoppingCart
             //shopper: qerry isle displ, stock displ, add to cart loop
             string storePath = "C:\\Users\\jonin\\source\\repos\\C_sharp_parctice\\shoppingCart\\Store";
             string cartPath = "C:\\Users\\jonin\\source\\repos\\C_sharp_parctice\\shoppingCart\\currentShoppingCart.txt";
-            bool valid = false;
-            string user;
-            List<string> modes = new List<string>()
-            {
-                "shopper", "owner"
-            };
-            Console.WriteLine($"{modes[0]}  {modes[1]}");
-            do
-            {
-                Console.Write("Sellect mode: ");
-                user = Console.ReadLine().ToLower();
-                if (user.Equals(modes[0]))
-                {
-                    valid = true;
-                    shoppingPath(storePath, cartPath);
-                }
-                else if (user.Equals(modes[1]))
-                {
-                    valid = true;
-                    //ownerPath(); this is the loop
-                }
-            } while (!valid);
+            shoppingPath(storePath, cartPath);
         }
 
         static void shoppingPath(string storePath, string cartPath)
@@ -143,7 +122,6 @@ namespace shoppingCart
             List<string> price;
             List<string> shoppingCart = fetchFromFile(cartPath, "", "", 1, "");
             List<string> isle = fetchFromFile(cartPath, "", "", 0, "");
-            Console.WriteLine(1);
 
             for (int i = 0; i < shoppingCart.Count; i++)
             {
@@ -159,11 +137,7 @@ namespace shoppingCart
                 print($"*BEEP* {currItem} cost {rlPrice} *BEEP*");
                 runningTotal += rlPrice;
 
-                updateStockInFile(storePath, currIsle, currItem)
-
-
-
-
+                updateStockInFile(storePath, currIsle, currItem);
             }
             File.WriteAllText(cartPath, string.Empty);
             Console.WriteLine($"that will be a total of {runningTotal}$");
@@ -182,14 +156,6 @@ namespace shoppingCart
                 Console.WriteLine(fileName);
             };
             return isles;
-        }
-
-        static void ownerPath()
-        {
-            //loop for isle
-            //prompt for adding stock or adding item
-            //add stock or item
-            //end script from wherever
         }
 
         static int countInCart(List<string> shoppingCart, string hand)
