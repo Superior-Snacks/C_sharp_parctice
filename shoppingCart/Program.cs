@@ -6,41 +6,19 @@ namespace shoppingCart
     class Program
     {
         static void Main(string[] args)
-        {/*
-            string title = "TODO";
-            string t1 = "shoppingcart: ";
-            string t1Content = "adding list of items";
-            string t2 = "market: ";
-            string t2Content = "a dictionary of items for sale with price and quantiy availabel";
-            string t3 = "logic: ";
-            string t3Content = "add only to cart if spelled correctly, " +
-                "remove from stock when added to cart " +
-                "and do not allow to take more than in stock " +
-                "have a checkout process";
-            Console.WriteLine(title);
-            Thread.Sleep(200);
-            Console.Write(t1);
-            print(t1Content);
-            Thread.Sleep(200);
-            Console.Write(t2);
-            print(t2Content);
-            Thread.Sleep(200);
-            Console.Write(t3);
-            print(t3Content);
-            Console.ReadLine();*/
-            //mode controll, shopper, owner
-            //owner: querry loop, add stock and price change
-            //shopper: qerry isle displ, stock displ, add to cart loop
-            string storePath = "C:\\Users\\jonin\\source\\repos\\C_sharp_parctice\\shoppingCart\\Store";
-            string cartPath = "C:\\Users\\jonin\\source\\repos\\C_sharp_parctice\\shoppingCart\\currentShoppingCart.txt";
-            shoppingPath(storePath, cartPath);
+        {
+        string storePath = "C:\\Users\\jonin\\source\\repos\\C_sharp_parctice\\shoppingCart\\Store";
+        string cartPath = "C:\\Users\\jonin\\source\\repos\\C_sharp_parctice\\shoppingCart\\currentShoppingCart.txt";
+        shoppingPath(storePath, cartPath);
         }
 
         static void shoppingPath(string storePath, string cartPath)
         {
             List<string> isles = decodeIsles(storePath);
             List<string> shoppingCart = new List<string>() {};
+
             displayList(isles);
+            
             string isleChoice;
             bool shopping = true;
             while (shopping)
@@ -77,11 +55,9 @@ namespace shoppingCart
             List<string> stock = fetchFromFile(storePath, isle, ".txt", 1, "\\");
             List<string> price = fetchFromFile(storePath, isle, ".txt", 2, "\\");
             List<string> shoppingCart;
-
             
-            //dislay stock
             displayList(items);
-            //shopping loop querry
+
             string hand;
             int inCart;
             do
@@ -104,7 +80,6 @@ namespace shoppingCart
                     {
                         Console.WriteLine("OUT OF STOCK");
                     }
-
                 }
             } while (hand != "return");
             return shoppingCart;
