@@ -23,7 +23,6 @@ namespace shoppingCart
             bool shopping = true;
             while (shopping)
             {
-                Console.WriteLine("while");
                 do
                 {
                     Console.Write("choose isle: ");
@@ -69,8 +68,6 @@ namespace shoppingCart
                 {
                     int idx = Convert.ToInt32(stock[items.IndexOf(hand)]);
                     inCart = countInCart(shoppingCart, hand);
-                    Console.WriteLine(idx);
-                    Console.WriteLine(inCart);
                     if (idx - inCart > 0)
                     {
                         Console.WriteLine($"added {hand} to cart");

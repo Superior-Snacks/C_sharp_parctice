@@ -1,2 +1,2 @@
-milk,98,1.20
-youghurt,200,2.50
+milk,96,1.20
+youghurt,199,2.50
