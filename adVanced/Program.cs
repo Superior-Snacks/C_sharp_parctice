@@ -1,3 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-Console.ReadLine();
+﻿namespace adVanced
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.ReadLine();
+        }
+    }
+}
