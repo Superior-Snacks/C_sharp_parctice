@@ -20,9 +20,14 @@
 
             var name = Console.ReadLine();
 
-            multiLog(name);
+            LogText(multiLog, name);
             
             Console.ReadLine();
+        }
+
+        static void LogText(LogDel logDel, string text)
+        {
+            logDel(text);
         }
         
     }
