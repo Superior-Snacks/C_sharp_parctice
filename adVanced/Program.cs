@@ -6,6 +6,11 @@
 
         static void Main(string[] args)
         {
+            LogDel logDel = new LogDel(LogTExtToScreen);
+
+            logDel("text");
+
+
             Console.ReadLine();
         }
         static void LogTExtToScreen( string text)
