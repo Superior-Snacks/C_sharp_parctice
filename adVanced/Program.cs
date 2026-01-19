@@ -20,7 +20,7 @@
 
             var name = Console.ReadLine();
 
-            LogText(multiLog, name);
+            LogText(LogTextToScreenDel, name);
             
             Console.ReadLine();
         }
