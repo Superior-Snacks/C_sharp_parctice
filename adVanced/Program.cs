@@ -6,7 +6,10 @@
 
         static void Main(string[] args)
         {
-            LogDel logDel = new LogDel(LogTextToFile);
+            Log log = new Log();
+
+
+            LogDel logDel = new LogDel(log.LogTextToScreen);
 
             Console.Write("input name:");
 
@@ -18,9 +21,9 @@
         }
         
     }
-    public class log
+    public class Log
     {
-        void LogTExtToScreen(string text)
+        void LogTextToScreen(string text)
         {
             Console.WriteLine($"{DateTime.Now}: {text}");
         }
