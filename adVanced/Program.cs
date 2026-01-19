@@ -8,9 +8,12 @@
         {
             LogDel logDel = new LogDel(LogTExtToScreen);
 
-            logDel("text");
+            Console.Write("input name:");
 
+            var name = Console.ReadLine();
 
+            logDel(name);
+            
             Console.ReadLine();
         }
         static void LogTExtToScreen( string text)
