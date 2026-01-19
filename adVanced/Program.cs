@@ -6,7 +6,7 @@
 
         static void Main(string[] args)
         {
-            LogDel logDel = new LogDel(LogTExtToScreen);
+            LogDel logDel = new LogDel(LogTextToFile);
 
             Console.Write("input name:");
 
@@ -16,9 +16,21 @@
             
             Console.ReadLine();
         }
-        static void LogTExtToScreen( string text)
+        
+    }
+    public class log
+    {
+        void LogTExtToScreen(string text)
         {
             Console.WriteLine($"{DateTime.Now}: {text}");
+        }
+
+        void LogTextToFile(string text)
+        {
+            using (StreamWriter sw = new StreamWriter(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "log.txt"), true))
+            {
+                sw.WriteLine($"{DateTime.Now}: {text}");
+            }
         }
     }
 }
