@@ -9,13 +9,18 @@
             Log log = new Log();
 
 
-            LogDel logDel = new LogDel(log.LogTextToScreen);
+            LogDel LogTextToScreenDel, LogTextToFileDel;
+
+            LogTextToFileDel = new LogDel(log.LogTextToFile);
+            LogTextToScreenDel = new LogDel(log.LogTextToScreen);
+
+            LogDel multiLog = LogTextToFileDel + LogTextToScreenDel;
 
             Console.Write("input name:");
 
             var name = Console.ReadLine();
 
-            logDel(name);
+            multiLog(name);
             
             Console.ReadLine();
         }
