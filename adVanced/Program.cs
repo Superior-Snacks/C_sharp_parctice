@@ -23,12 +23,12 @@
     }
     public class Log
     {
-        void LogTextToScreen(string text)
+        public void LogTextToScreen(string text)
         {
             Console.WriteLine($"{DateTime.Now}: {text}");
         }
 
-        void LogTextToFile(string text)
+        public void LogTextToFile(string text)
         {
             using (StreamWriter sw = new StreamWriter(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "log.txt"), true))
             {
