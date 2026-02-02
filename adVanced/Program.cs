@@ -24,6 +24,7 @@
             
             Console.ReadLine();
         }
+        //what is my blod type
 
         static void LogText(LogDel logDel, string text)
         {
